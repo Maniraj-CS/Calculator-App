@@ -16,9 +16,9 @@ body{
 
 
 .container{
-    height: 64%;
+    height: 75%;
     width: 23%;
-    padding: 20px;
+    padding: 12px;
     background: rgba( 255, 255, 255, 0.45 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
@@ -28,6 +28,12 @@ body{
 
 
 }
+
+@media screen and (max-width:1200px) {
+    .container{
+         height: 64%;
+    }
+} 
 
 #input_inline{
     width: 100%;
@@ -48,19 +54,38 @@ body{
 }
 
 .buttonSection{
-       padding-left: 0.8rem;
+        padding-left: 0.4rem; 
+        overflow: hidden;
 }
 
 button{
     
-    width: 100px;
-    height: 100px;
-    margin: 5.1px;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
     border-radius: 50%;
     border: none;
     background-color: transparent;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    font-size: 2rem;
+    box-shadow: 0 2px 2px 0 rgba( 31, 38, 135, 0.37 );
+    font-size: 1.5rem;
     cursor: pointer;
     padding-bottom: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    button{
+        width: 50px;
+        height: 50px;
+    }
+} 
+
+.line{
+    display: flex;
+    flex-direction: row;
+    
 }
